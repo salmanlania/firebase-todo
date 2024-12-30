@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>User Registration</h2>
+            <form id="registration-form" class="form-inputs">
+                <input value="Ali" type="text" id="first-name" placeholder="First Name"  />
+                <input value="Khan" type="text" id="last-name" placeholder="Last Name"  />
+                <input value="20" type="number" id="age" placeholder="Age"  />
+                <input value="ali@Khan.com" type="email" id="email" placeholder="Email"  />
+                
+                <div class="gender-group">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="Male" checked> Male</label>
+                    <label><input type="radio" name="gender" value="Female" > Female</label>
+                    <label><input type="radio" name="gender" value="Other" > Other</label>
+                </div>
+
+                <div class="radio-group">
+                    <label>Is Experienced?</label>
+                    <label><input type="radio" name="is-experienced" value="Yes" checked> Yes</label>
+                    <label><input type="radio" name="is-experienced" value="No" > No</label>
+                </div>
+                
+                <div class="radio-group">
+                    <label>Has Laptop?</label>
+                    <label><input type="radio" name="has-laptop" value="Yes" checked> Yes</label>
+                    <label><input type="radio" name="has-laptop" value="No" > No</label>
+                </div>
+
+                <button type="submit" class="add-btn">Register</button>
+            </form>
+        </div>
+
+        <div class="card-section">
+            <h2>Registered Users</h2>
+            <div class="card-container" id="card-container">
+                <!-- User registration cards will appear here -->
+            </div>
+
+            <div id="pagination" class="pagination" style="display: none;">
+                <button class="prev">Previous</button>
+                <span id="page-number">Page 1</span>
+                <button class="next">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./app.js" defer></script>
+</body>
+</html>

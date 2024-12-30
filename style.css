@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* max-width: 1200px; */
+}
+
+.form-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.card-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-inputs input {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.radio-group, .gender-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.add-btn {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #45a049;
+}
+
+.card-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h4 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.pagination button:hover {
+    background-color: #45a049;
+}
+
+.pagination span {
+    font-size: 16px;
+    align-self: center;
+}
+
+/* General styling for the delete button */
+.delete-button {
+    background-color: #ff4d4d; /* Red background to indicate delete action */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for the delete button */
+.delete-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+/* Focus effect for accessibility */
+.delete-button:focus {
+    outline: 2px solid #ff9999; /* Add outline on focus */
+    outline-offset: 2px; /* Space between button and outline */
+}
