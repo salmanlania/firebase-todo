@@ -2,9 +2,6 @@ import { getdata, addData, delData } from './firebase.js';
 
 console.log('doc.data()', getdata());
 
-// getdata.map((doc, index) => {
-//     console.log(`Document ${index + 1}:`, doc.email); // Log each document's data
-// });
 
 const form = document.getElementById('registration-form');
 const cardContainer = document.getElementById('card-container');
